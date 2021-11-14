@@ -15,4 +15,9 @@ pip install iabwrapper
 
 #
 ### Usage
-Docs about using this library will be updated. Meanwhile, please follow ![anjlab's android-inapp-billing-v3](https://github.com/anjlab/android-inapp-billing-v3) docs for reference.
+```python
+from iabwrapper import PythonBillingProcessor
+```
+You'll only be using the [`PythonBillingProcessor`](https://github.com/shashi278/android-iab-v3-kivy/blob/main/iabwrapper/main.py#L102) class so you can look at what all parameters are required for different methods from the source code for now.
+
+To know about what a method does, please follow ![anjlab's android-inapp-billing-v3](https://github.com/anjlab/android-inapp-billing-v3) docs for reference. Docs about using this library will be updated.
