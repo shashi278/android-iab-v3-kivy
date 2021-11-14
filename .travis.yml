@@ -1,0 +1,26 @@
+cache: pip
+matrix:
+  fast_finish: true
+  include:
+  - name: Black
+    env: RUN=black
+    language: python
+    python: 3.7
+    os: linux
+    dist: bionic
+install:
+- pip install pycodestyle
+script:
+- pycodestyle iabwrapper/__init__.py
+after_failure:
+- sleep 10;
+- echo == End ==
+deploy:
+  skip_existing: true
+  provider: pypi
+  user: __token__
+  password:
+    secure: Ns5qkp4xcg0FveWIOKpBmRRRf0qx/gb2JXPzNOl0hC30MtEi9arOv/3I6eowx8BgjyRIqoevCsxF+3LA6+aomoqYHcdMxo8rO5XB0/24h7zcZ4Al6XiINIXJX5Auu1AuPJhwBOuorI1jS7XwcvXjPXEEzcIIAGTuWTu6fHPWcaJOvaNcOHpHA932LI7TdrxM1VKPjCfISnBUmoYTkydDppq1ywhaPe66WS90dEaanYJr1i2ivAvFnCI3TIRSaWD0Kz4WiVoM7YYV+SRaBON4DCNoj9UEDYjWqr+DfcRRmwxrxnyxV3ljWYlo84osVYW6cjIz8A1ppwUBaQcoAG7P7ZmyC/wyqNLvo7Pqs5ggl2viAapiHepwPuriwGt+Kbm7PejUnAIQ/MGz86aY9ZNwDtVZLAJdJjwdfKt+PAtX9HJSzJ2/owqsULeDuNh/aoREMfZ6vuFo9XtK74h1oQU652M5g4tuK/QWmP0BzVzBQVr5JNpQUzCarHNZO2pfSJ8a1s8gOzLuuomh8WGxHdUNo0QSwqeSOLianXIK6f/Q+K+6Hnwi1JBZk7NXO/osPdXPPi6p+FgZR78kZKuOeqinJiC0dU/9SaOETLRJ3MCRJyZ1qqK+RjQu8QG9V5nmXiw44VTmpgIN4IU/yVtTVBJ4rAIHtLdGI/BsIKGgOfitdsw=
+  distributions: sdist bdist_wheel
+  on:
+    tags: true
