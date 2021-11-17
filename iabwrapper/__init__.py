@@ -1,7 +1,7 @@
 from kivy.logger import Logger
 from kivy.utils import platform
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 _log_message = ("IABwrapper:"
                 + f" {__version__}"
                 + f' (installed at "{__file__}")'
