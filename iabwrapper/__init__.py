@@ -10,7 +10,7 @@ _log_message = ("IABwrapper:"
 Logger.info(_log_message)
 
 if platform == "android":
-    from main import PythonBillingProcessor
+    from iab import PythonBillingProcessor
 
 else:
     Logger.error("IABwrapper: This module is only available on Android")
