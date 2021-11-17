@@ -1,8 +1,9 @@
 from kivy.logger import Logger
 from kivy.utils import platform
 
-__version__ = "0.0.4"
-_log_message = ("IABwrapper:"
+__version__ = "1.0.0"
+lib_name = "iabwrapper"
+_log_message = (f"{lib_name}:"
                 + f" {__version__}"
                 + f' (installed at "{__file__}")'
                 )
@@ -10,7 +11,7 @@ _log_message = ("IABwrapper:"
 Logger.info(_log_message)
 
 if platform == "android":
-    from iabwrapper.iab import PythonBillingProcessor
+    from iabwrapper.wrapper import BillingProcessor
 
 else:
-    Logger.error("IABwrapper: This module is only available on Android")
+    Logger.error(f"{lib_name}: This module is only available on Android")
