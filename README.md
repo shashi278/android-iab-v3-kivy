@@ -1,9 +1,19 @@
-# IABwrapper
-#### Wrapper around [anjlab's](https://github.com/anjlab/android-inapp-billing-v3) Android In-app Billing Version 3 to be used in Kivy apps
+<h1 align="center"> IABwrapper</h1>
 
-[![Build Status](https://app.travis-ci.com/shashi278/android-iab-v3-kivy.svg?branch=main)](https://app.travis-ci.com/shashi278/android-iab-v3-kivy) [![Python 3.6](https://img.shields.io/pypi/pyversions/kivymd)](https://www.python.org/downloads/release/python-360/) [![PyPI](https://img.shields.io/pypi/v/iabwrapper)](https://pypi.org/project/IABwrapper/) [![format](https://img.shields.io/pypi/format/iabwrapper)](https://pypi.org/project/IABwrapper/) [![downloads](https://img.shields.io/pypi/dm/iabwrapper)](https://pypi.org/project/iabwrapper/) [![code size](https://img.shields.io/github/languages/code-size/shashi278/android-iab-v3-kivy)]() [![repo size](https://img.shields.io/github/repo-size/shashi278/android-iab-v3-kivy)]()
+<h4 align="center">Wrapper around <a href="https://github.com/anjlab/android-inapp-billing-v3">Anjlab's</a> Android In-app Billing Version 3 to be used in Kivy apps</h4>
+
+<p align="center"><a href="https://app.travis-ci.com/shashi278/android-iab-v3-kivy"><img src="https://app.travis-ci.com/shashi278/android-iab-v3-kivy.svg?branch=main" alt="Build Status"/></a>
+<a href="https://www.python.org/downloads/release/python-360/"><img src="https://img.shields.io/pypi/pyversions/kivymd" alt="Python 3.6"/></a>
+<a href="https://pypi.org/project/IABwrapper/"><img src="https://img.shields.io/pypi/v/iabwrapper" alt="PyPI"/></a>
+<a href="https://pypi.org/project/IABwrapper/"><img src="https://img.shields.io/pypi/format/iabwrapper" alt="format"/></a>
+<a href="https://pypi.org/project/IABwrapper/"><img src="https://img.shields.io/pypi/dm/iabwrapper" alt="downloads"/></a>
+<a href="https://pypi.org/project/IABwrapper/"><img src="https://img.shields.io/github/languages/code-size/shashi278/android-iab-v3-kivy" alt="code size"/></a>
+<a href="https://pypi.org/project/IABwrapper/"><img src="https://img.shields.io/github/repo-size/shashi278/android-iab-v3-kivy" alt="repo size"/></a>
 
 #
+### Demo
+<p align="center"><img src="https://raw.githubusercontent.com/shashi278/android-iab-v3-kivy/main/demo/iabwrapper_demo.gif" width=200 /></p>
+
 ### Install
 ```bash
 pip install iabwrapper
